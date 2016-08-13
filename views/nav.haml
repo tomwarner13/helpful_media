@@ -1,0 +1,6 @@
+-links = [{"name" => "Home", "route" => "/"},{"name" => "About", "route" => "/about"}]
+
+%ul#nav-main.nav
+  - links.each do |link|
+    %li.nav-link
+      %a{:href => link["route"]} #{link["name"]}
